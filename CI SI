@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float SI,CI,P,R,T;
+    printf("Enter Principal:  \n");
+    scanf("%f",&P);
+    printf("Enter Rate of intrest: \n");
+    scanf("%f",&R);
+    printf(" Enter the time ine YEARS: \n");
+    scanf("%f",&T);
+
+    SI = (P*R*T)/100;
+    CI = P*pow(1+(R/100),T)-P;
+     printf("Simple Intrest is :  %f\n", SI);
+     printf("Compound Intrest is : %f\n", CI);
+}
